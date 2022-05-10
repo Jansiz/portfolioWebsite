@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body {
+    background-image: url(../images/WebApp_bg_img.png); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity:95%;
+  }
+
+#about_title{
+    text-align: center;
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+    
+}
+.nav-wrapper{
+    padding-left: 5px;
+    
+    
+}
+
+#copyright{
+    text-align: center;
+}
+
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+}
+
+#About{
+    padding-top: 60px;
+    margin-top: -60px;
+}
+#Projects{
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+#Privacy{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p_centre_text{
+    text-align: center;
+}
+
+.input-field [type=text], [type=email] {
+    color:white;
+}  
+
