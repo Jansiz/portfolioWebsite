@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import project
+from .models import contact, project
 from tinymce.widgets import TinyMCE
 from django.db import models
 # Register your models here.
@@ -10,4 +10,12 @@ formfield_overrides = {
     models.TextField: {'widget': TinyMCE()}
 }
 
+
+class contactAdmin(admin.ModelAdmin):
+
+     fields = ["First_Name", "Last_Name","Email", "Subject", "Body"]
+
+
+
 admin.site.register(project, projectAdmin)
+admin.site.register(contact, contactAdmin)

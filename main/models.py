@@ -18,14 +18,15 @@ class project(models.Model):
 
 
 class contact(models.Model):
-    contact_FirstName = models.CharField(max_length=200)
-    contact_LastName = models.CharField(max_length=200)
-    contact_Email = models.CharField(max_length=200)
-    contact_Subject = models.CharField(max_length=200)
-    contact_body = models.TextField()
+    First_Name = models.CharField(max_length=200)
+    Last_Name = models.CharField(max_length=200)
+    Email = models.CharField(max_length=200)
+    Subject = models.CharField(max_length=200)
+    Body = models.TextField()
 
     
 
 
     def __str__(self):
-        return self.contact_FirstName
+        return self.First_Name
+

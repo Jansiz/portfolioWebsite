@@ -1,13 +1,21 @@
+from cProfile import label
 from django.shortcuts import render
-from django.http import HttpResponse
 from .models import project
+from .form import contactForm
 # Create your views here.
 
 def homepage(request):
+
+    form = contactForm()
+    if request.method == 'POST':
+        form = contactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            form = contactForm()
     #pull the html template 
     return render(request=request, template_name="main/index.html",
     #pull model
-    context={"projects": project.objects.all})
+    context={"projects": project.objects.all, "form": form})
 
 def privacy(request):
 #pull the html template 
