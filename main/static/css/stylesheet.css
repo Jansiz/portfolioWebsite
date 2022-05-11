@@ -20,13 +20,10 @@ body {
     margin-right: auto;
     margin-left: auto;
     
-    
-    
 }
 .nav-wrapper{
     padding-left: 5px;
-    
-    
+      
 }
 
 #copyright{
@@ -62,3 +59,23 @@ body {
     color:white;
 }  
 
+#licenses{
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+#skill_title{
+    text-align: center;
+}
+
+#yorku_image{
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education_title{
+    text-align: center;
+}

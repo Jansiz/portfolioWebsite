@@ -1,4 +1,5 @@
 from django.db import models
+from .validators import validate_file_extension
 
 # Create your models here.
 
@@ -28,5 +29,14 @@ class contact(models.Model):
 
 
     def __str__(self):
-        return self.First_Name
+        return self.Last_Name
 
+
+
+class skills(models.Model):
+    skill_title = models.CharField(max_length=200)
+    skill_image = models.ImageField(upload_to = 'static/images/', height_field=None, width_field=None, max_length=100)
+    skill_file = models.FileField(upload_to='static/images/', validators=[validate_file_extension])
+
+    def __str__(self):
+        return self.skill_title

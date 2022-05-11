@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import contact, project
+from .models import contact, project, skills
 from tinymce.widgets import TinyMCE
 from django.db import models
 # Register your models here.
@@ -17,5 +17,10 @@ class contactAdmin(admin.ModelAdmin):
 
 
 
+class skillsAdmin(admin.ModelAdmin):
+
+     fields = ["skill_title", "skill_image", "skill_file"]
+
 admin.site.register(project, projectAdmin)
 admin.site.register(contact, contactAdmin)
+admin.site.register(skills, skillsAdmin)

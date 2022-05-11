@@ -1,6 +1,6 @@
 from cProfile import label
 from django.shortcuts import render
-from .models import project
+from .models import project, skills
 from .form import contactForm
 # Create your views here.
 
@@ -15,7 +15,7 @@ def homepage(request):
     #pull the html template 
     return render(request=request, template_name="main/index.html",
     #pull model
-    context={"projects": project.objects.all, "form": form})
+    context={"projects": project.objects.all, "form": form, "skills": skills.objects.all})
 
 def privacy(request):
 #pull the html template 

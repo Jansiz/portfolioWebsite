@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7s0aymiid3+0p-kd_bm)q*ebxne^14370tq%p@v0b49yl56nch
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.2.16', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1']
 TINYMCE_JS_URL = 'http://debug.example.org/tiny_mce/tiny_mce_src.js'
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
