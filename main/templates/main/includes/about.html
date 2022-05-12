@@ -18,17 +18,17 @@
         <strong>well as having SEO, analytics, and Advertising skills by working on Shopify dropshipping stores, Facebook advertising, and a successful Youtube Channel.</strong></p></div>
       <div id="test5">
           <img src="{% static 'images/yorku_logo.png' %}" id="yorku_image">
-        <h4 class="education_title">YORK UNIVERSITY</h4><p class="education_title"><strong> Bachelor of Computer Science</strong></p></div>
+        <h4 class="education_title">YORK UNIVERSITY</h4><p class="education_title"><strong> Bachelor of Science<br>Computer Science (Honours) </strong></p></div>
       <div id="test6">
         <div class="row">
           {% for s in skills %} 
-          <div class="col s12 m6 l4">
+          <div class="col s2">
             <div class="card  red accent-3 ">
               <div class="card-image">
                 <img src="{{s.skill_file |safe }}">
             </div> 
             <div class="card-content white-text">
-              <span class="card-title activator white-text" id="skill_title">{{s.skill_title}}</span>
+              <span class="card-title white-text" id="skill_title">{{s.skill_title}}</span>
           </div>
 
 
